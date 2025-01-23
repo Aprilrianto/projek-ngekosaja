@@ -1,67 +1,59 @@
 .table-container {
-    width: 100% !important;
-    padding: 20px !important;
-    box-sizing: border-box !important;
-    margin-top: 80px !important;
-  }
-  
-  .table-title {
-    font-size: 24px !important;
-    margin-bottom: 20px !important;
-    text-align: center !important;
-  }
-  
-  .table {
-    width: 100% !important;
-    border-collapse: collapse !important;
-    border: 1px solid #ddd !important;
-  }
-  
-  .table th, .table td {
-    padding: 12px !important;
-    text-align: left !important;
-    border: 1px solid #ddd !important;
-  }
-  
-  .table th {
-    background-color: #f4f4f4 !important;
-    font-weight: bold !important;
-  }
-  
-  .actions-column {
-    width: 80px !important; /* Make action column smaller */
-    text-align: center !important;
-  }
-  
-  .actions {
-    display: flex !important;
-    justify-content: space-around !important;
-  }
-  
-  .action-btn {
-    background: none !important;
-    border: none !important;
-    cursor: pointer !important;
-    padding: 5px !important;
-  }
-  
-  .edit-btn {
-    color: #4CAF50 !important;
-  }
-  
-  .delete-btn {
-    color: #f44336 !important;
-  }
-  
-  .action-btn:hover {
-    opacity: 0.7 !important;
-  }
-  
-  .edit-btn:hover {
-    color: #45a049 !important;
-  }
-  
-  .delete-btn:hover {
-    color: #e53935 !important;
-  }
-  
+  padding: 20px !important;
+  text-align: center !important;
+}
+
+.table-title {
+  margin-bottom: 20px !important;
+  font-size: 24px !important;
+  color: #333 !important;
+}
+
+.chart-container {
+  margin-top: 20px !important;
+  height: 400px !important;
+}
+
+/* Styling untuk Recharts */
+.recharts-wrapper {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.recharts-surface {
+  overflow: visible !important;
+}
+
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #ccc !important;
+  stroke-dasharray: 3 3 !important;
+}
+
+.recharts-cartesian-axis-tick-value {
+  font-size: 12px !important;
+  fill: #333 !important;
+}
+
+.recharts-tooltip-wrapper {
+  background-color: #fff !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  padding: 8px !important;
+}
+
+.recharts-legend-wrapper {
+  bottom: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.recharts-legend-item {
+  font-size: 14px !important;
+  color: #333 !important;
+}
+
+.recharts-area {
+  stroke-width: 2px !important;
+}

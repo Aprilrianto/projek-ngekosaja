@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
-import '../style/sidebar.css'
-import { MdDashboard, MdHotel } from "react-icons/md";
+import '../style/sidebar.css';
+import { MdDashboard, MdHotel, MdPayment } from "react-icons/md";  // Added MdPayment for 'Pembayaran'
+
 const Sidebar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
@@ -17,7 +18,10 @@ const Sidebar = () => {
         setIsOpen(false);
     };
 
-   
+    const navigateToPembayaran = () => {
+        navigate('/dashboard_pembayaran');
+        setIsOpen(false);
+    };
 
     const handleLogout = () => {
         // Log out logic here (e.g., clear session data, tokens)
@@ -60,6 +64,16 @@ const Sidebar = () => {
                         </button>
                     </li>
 
+                    {/* New Pembayaran Section */}
+                    <li className="nav-item">
+                        <button 
+                            onClick={navigateToPembayaran}
+                            className={`nav-link ${location.pathname === '/dashboard_pembayaran' ? 'active' : ''}`}
+                        >
+                            <MdPayment />
+                            Pembayaran
+                        </button>
+                    </li>
                     
                 </ul>
 

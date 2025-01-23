@@ -7,15 +7,17 @@ import Tentangkami from './pages/tentangkami';
 import Detailkos from './pages/detailkos';
 import Register from './pages/register';
 import Login from './pages/login';
-import Paymentkos from './pages/paymentkos';
+// import Paymentkos from './pages/paymentkos';
 import Riwayatkos from './pages/riwayatkos';
+import DetailPayment from './pages/detailpayment'; // Sesuaikan path-nya
 
 
 
 // dashboard pemilik kost
 import Dashboard_overview from './pages-dashpemilik/dashboard_overview';
 import Kamar from './pages-dashpemilik/dashboard_kamar';
-
+import Dashboard_pembayaran from './pages-dashpemilik/dashboard_pembayaran';
+import BuatPesanan from './pages/BuatPesanan';
 const App = () => {
     return (
         <Router> 
@@ -28,13 +30,14 @@ const App = () => {
                     <Route path="/faq" element={<Faq />} />
                     <Route path="/tentangkami" element={<Tentangkami />} />
                     <Route path="/detailkos/:id" element={<Detailkos />} />
-                    <Route path="/paymentkos" element={<Paymentkos />} />
+                    <Route path="/detailpayment" element={<DetailPayment />} />
                     <Route path="/riwayatkos" element={<Riwayatkos />} />
-                    
+                    <Route path="/buat-pesanan/:id" element={<BuatPesanan />} />
 
                      {/* dashboard pemilik kost */}
                     <Route path="/dashboard_overview" element={<Dashboard_overview />} />
                     <Route path="/dashboard_kamar" element={<Kamar/>} />
+                    <Route path="/dashboard_pembayaran" element={<Dashboard_pembayaran/>} />
                 </Routes>
             </div>
         </Router>

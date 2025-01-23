@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const Pilihan = () => {
     const targetDate = new Date('2024-12-31T23:59:59');
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-    const [kamar, setKamar] = useState([]); // State untuk menyimpan data kamar dari backend
+    const [kamar, setKamar] = useState([]);
 
     // Fungsi untuk menghitung waktu tersisa
     function calculateTimeLeft() {
@@ -27,7 +27,7 @@ const Pilihan = () => {
                 seconds: Math.floor((difference / 1000) % 60),
             };
         } else {
-            timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
+            timeLeft = { days: 4, hours: 20, minutes: 20, seconds: 30 };
         }
 
         return timeLeft;
@@ -71,11 +71,11 @@ const Pilihan = () => {
                 <Row className="mt-5">
                     {kamar.map((data) => (
                         <Col md={3} key={data.id} className="mb-4">
-                            <Link to={`/detailkos/${data.id}`} className="text-decoration-none">
+                            <Link to={`/buat-pesanan/${data.id}`} className="text-decoration-none">
                                 <Card className="h-100 shadow-sm">
                                     <Card.Img
                                         variant="top"
-                                        src={`http://localhost:5000/uploads/${data.gambar}`} // Tampilkan gambar dari backend
+                                        src={`http://localhost:5000/uploads/${data.gambar}`}
                                         alt={data.nomor_kamar}
                                     />
                                     <Card.Body>
@@ -87,13 +87,13 @@ const Pilihan = () => {
                                             <i className="bi bi-geo-alt-fill text-success"></i> {data.deskripsi}
                                         </Card.Text>
                                         <Card.Text className="text-warning mb-1">
-                                            <i className="bi bi-star-fill"></i> 4.9 (24) {/* Rating bisa disesuaikan */}
+                                            <i className="bi bi-star-fill"></i> 4.9 (24)
                                         </Card.Text>
                                         <Card.Text className="text-muted text-decoration-line-through">
-                                            Rp 500.000 {/* Harga asli bisa disesuaikan */}
+                                            Rp 500.000
                                         </Card.Text>
                                         <div className="d-flex align-items-center">
-                                            <Badge bg="danger" className="me-2">12%</Badge> {/* Diskon bisa disesuaikan */}
+                                            <Badge bg="danger" className="me-2">12%</Badge>
                                             <Card.Text className='Harga'>
                                                 Rp {data.harga}/Bulan
                                             </Card.Text>

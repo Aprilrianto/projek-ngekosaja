@@ -1,15 +1,15 @@
-import Headerpay from "../komponen/headerpay";
-import Detailpayment from "./detailpayment";
+// import Headerpay from "../komponen/headerpay";
 
-const paymentkos = () => {
-    return (
-        <div className="Payment-header">
-            <Headerpay />
-        <div className="Paymentkos-container">
-            <Detailpayment/>
-        </div>
-    </div>
-        )
+
+// const paymentkos = () => {
+//     return (
+//         <div className="Payment-header">
+//             <Headerpay />
+//         <div className="Paymentkos-container">
+          
+//         </div>
+//     </div>
+//         )
            
-}
-export default paymentkos;
+// }
+// export default paymentkos;

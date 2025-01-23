@@ -1,13 +1,27 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Form, Button, Image, Modal } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Container, Row, Col, Form, Button, Image, Modal, Alert } from 'react-bootstrap';
+import { Link, useLocation } from 'react-router-dom';
 import { AiOutlineArrowLeft, AiOutlineShareAlt, AiOutlineDownload } from 'react-icons/ai';
 import { jsPDF } from 'jspdf';
-import '../style/detailpay.css'
-import bg from '../aset/kos 1.jpg';
+import '../style/detailpay.css';
 
 const DetailPayment = () => {
     const [showModal, setShowModal] = useState(false);
+    const location = useLocation();
+    const { pesanan, kamar } = location.state || {};
+
+    // Debugging: Periksa data yang diterima
+    console.log('Data Pesanan:', pesanan);
+    console.log('Data Kamar:', kamar);
+
+    // Jika tidak ada data, tampilkan pesan error
+    if (!location.state) {
+        return (
+            <div className="container mt-5">
+                <Alert variant="danger">Data pesanan tidak ditemukan. Silakan buat pesanan terlebih dahulu.</Alert>
+            </div>
+        );
+    }
 
     const handlePayClick = () => {
         setShowModal(true);
@@ -23,11 +37,11 @@ const DetailPayment = () => {
 
         // Adding content to the PDF
         doc.text('Pembayaran berhasil', 10, 10);
-        doc.text('Nomor Pemesanan: AJA/2024/0390', 10, 20);
-        doc.text('Tanggal Pembayaran: 20 Sep 2024', 10, 30);
-        doc.text('Metode Pembayaran: Transfer Bank BCA', 10, 40);
-        doc.text('Penerima: Ratna Fitri', 10, 50);
-        doc.text('Total Pembayaran: Rp430.000', 10, 60);
+        doc.text(`Nomor Pemesanan: ${pesanan?.id || 'N/A'}`, 10, 20);
+        doc.text(`Tanggal Pembayaran: ${new Date().toLocaleDateString()}`, 10, 30);
+        doc.text(`Metode Pembayaran: ${pesanan?.metode_pembayaran || 'N/A'}`, 10, 40);
+        doc.text(`Penerima: ${pesanan?.nama_pemesan || 'N/A'}`, 10, 50);
+        doc.text(`Total Pembayaran: Rp${pesanan?.total_pembayaran || '0'}`, 10, 60);
 
         // Trigger the download of the PDF file
         doc.save('bukti-pembayaran.pdf');
@@ -86,14 +100,19 @@ const DetailPayment = () => {
                 </Col>
 
                 <Col md={6}>
+                    {/* Tampilkan gambar kamar dari data kamar */}
                     <div className="payment-box d-flex">
-                        <Image src={bg} rounded />
+                        <Image
+                            src={`http://localhost:5000/uploads/${kamar?.gambar}`}
+                            rounded
+                            style={{ width: '150px', height: '150px', objectFit: 'cover' }}
+                        />
                         <div className="ms-3">
-                            <h5>Kost Harmoni Asri</h5>
+                            <h5>{kamar?.nama || 'Kost Harmoni Asri'}</h5>
                             <p className="text-muted">Putri</p>
                             <p className="text-muted">
-                                <span role="img" aria-label="location">📍</span> Tipes, Surakarta
-                                <span role="img" aria-label="star">⭐</span> 4.9
+                                <span role="img" aria-label="location">📍</span> {kamar?.lokasi || 'Tipes, Surakarta'}
+                                <span role="img" aria-label="star">⭐</span> {kamar?.rating || '4.9'}
                             </p>
                         </div>
                     </div>
@@ -102,7 +121,7 @@ const DetailPayment = () => {
                         <h5 className="section-title">Detail Pembayaran</h5>
                         <div className="d-flex justify-content-between">
                             <p>Biaya Sewa Bulanan</p>
-                            <p>Rp400.000</p>
+                            <p>Rp{kamar?.harga || '0'}</p>
                         </div>
                         <div className="d-flex justify-content-between">
                             <p>Biaya Air</p>
@@ -115,7 +134,7 @@ const DetailPayment = () => {
                         <hr />
                         <div className="d-flex justify-content-between">
                             <p><strong>Total Pembayaran</strong></p>
-                            <p><strong>Rp430.000</strong></p>
+                            <p><strong>Rp{pesanan?.total_pembayaran || '0'}</strong></p>
                         </div>
                     </div>
                 </Col>
@@ -132,11 +151,11 @@ const DetailPayment = () => {
                     <h4>Pembayaran Berhasil</h4>
                     <p>Terima kasih. Pembayaran Anda telah kami terima.</p>
                     <div className="payment-box text-start">
-                        <p><strong>Nomor Pemesanan :</strong> AJA/2024/0390</p>
-                        <p><strong>Tanggal Pembayaran :</strong> 20 Sep 2024</p>
-                        <p><strong>Metode Pembayaran :</strong> Transfer Bank BCA</p>
-                        <p><strong>Penerima :</strong>Ratna Fitri</p>
-                        <p><strong>Total Pembayaran :</strong>Rp430.000</p>
+                        <p><strong>Nomor Pemesanan :</strong> {pesanan?.id || 'N/A'}</p>
+                        <p><strong>Tanggal Pembayaran :</strong> {new Date().toLocaleDateString()}</p>
+                        <p><strong>Metode Pembayaran :</strong> {pesanan?.metode_pembayaran || 'N/A'}</p>
+                        <p><strong>Penerima :</strong> {pesanan?.nama_pemesan || 'N/A'}</p>
+                        <p><strong>Total Pembayaran :</strong> Rp{pesanan?.total_pembayaran || '0'}</p>
                     </div>
                     <div className="d-flex justify-content-around mt-3">
                         <Button variant="outline-success" className="d-flex align-items-center">
@@ -151,6 +170,6 @@ const DetailPayment = () => {
             </Modal>
         </Container>
     );
-}
+};
 
 export default DetailPayment;

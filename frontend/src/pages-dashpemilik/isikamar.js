@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Button, Modal, Form, Table } from 'react-bootstrap';
+import { Button, Modal, Form, Table, Spinner, Alert } from 'react-bootstrap';
 import Swal from 'sweetalert2'; // Import SweetAlert2
 
 const Isikamar = () => {
@@ -15,14 +15,20 @@ const Isikamar = () => {
   });
   const [editId, setEditId] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   // Ambil data kamar dari backend
   const fetchKamar = async () => {
     try {
       const response = await axios.get('http://localhost:5000/api/kamar');
       setKamar(response.data);
+      setError(null);
     } catch (error) {
       console.error('Error fetching data:', error);
+      setError('Terjadi kesalahan saat mengambil data kamar.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -150,6 +156,24 @@ const Isikamar = () => {
       }
     }
   };
+
+  if (loading) {
+    return (
+      <div className="text-center mt-5">
+        <Spinner animation="border" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </Spinner>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="container mt-5">
+        <Alert variant="danger">{error}</Alert>
+      </div>
+    );
+  }
 
   return (
     <div className="dashboard-kamar">
