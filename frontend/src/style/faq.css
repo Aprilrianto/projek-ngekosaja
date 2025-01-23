@@ -1,0 +1,66 @@
+
+.faq-hal .text-1 h1 {
+    text-align: center ;
+    margin: 0;
+    padding-top: 90px;
+  }
+  
+
+  .faq-hal .text-1 h2 {
+    text-align: left;
+    margin-top: 10px;
+    padding-top: 20px;
+  }
+  
+  .faq-hal .text-1 h3{
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 400;
+  }
+  
+  .faq-hal .text-2 h1 {
+    text-align: center ;
+    margin: 0;
+    padding-top: 39px;
+  }
+  
+
+  .faq-hal .text-2 h2 {
+    text-align: left;
+    margin-top: 10px;
+    padding-top: 20px;
+  }
+  
+  .faq-hal .text-2 h3{
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 400;
+  }
+
+  .faq-hal .text-3 h1 {
+    text-align: center ;
+    margin: 0;
+    padding-top: 39px;
+  }
+  
+
+  .faq-hal .text-3 h2 {
+    text-align: left;
+    margin-top: 10px;
+    padding-top: 20px;
+  }
+  
+  .faq-hal .text-3 h3{
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 400;
+    margin-bottom: 60px;
+  }
+  
+  

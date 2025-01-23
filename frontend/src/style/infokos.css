@@ -1,0 +1,193 @@
+.infokos {
+    padding: 30px !important;
+    max-width: 100% !important;
+    
+}
+
+.header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+}
+
+.profile-and-details {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+.profile-and-details h3 {
+    padding-bottom: 10px !important;
+}
+
+.profile {
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+    margin-top: 0 !important;
+}
+
+.profile-icon {
+    background-image: url('../aset/logo-ngekos.png');
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    background-color: #090909 !important;
+    margin-right: 15px !important;
+}
+
+.account-name {
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+.account-details {
+    margin-top: 15px !important;
+    text-align: left !important;
+}
+
+.account-details h3 {
+    margin-top: 3px !important;
+    color: #000 !important;
+}
+
+.account-details p {
+    margin: 8px 0 !important;
+    color: #000 !important;
+    font-size: 18px !important;
+}
+
+
+
+.pricing-section {
+    border: 1px solid #ddd !important;
+    border-radius: 10px !important;
+    padding: 20px 30px !important;
+    background-color: #fff !important;
+    width: 100% !important;
+    max-width: 450px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.price-container {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    width: 100% !important;
+    justify-content: flex-start !important; /* Align content to the left */
+}
+
+.discount-badge {
+    background-color: #f91212 !important;
+    color: #fff !important;
+    padding: 5px 10px !important;
+    border-radius: 10px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+
+.price-details {
+    margin-top: 7px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important; 
+}
+
+.original-price {
+    font-size: 16px !important;
+    color: #999 !important;
+    text-decoration: line-through !important;
+    margin: 0 !important;
+}
+
+.current-price {
+    font-size: 24px !important;
+    font-weight: bold !important;
+    color: #000 !important;
+    margin: 0 !important;
+}
+
+
+.options {
+    display: flex !important;
+    gap: 15px !important;
+    width: 100% !important;
+    margin-top: 15px !important;
+}
+
+.option {
+    flex: 1 1 0 !important; /* Ensures each option takes equal space */
+    border: 1px solid #ddd !important;
+    padding: 15px !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    height: 90px !important; /* Set a consistent height for both boxes */
+    box-sizing: border-box !important; /* Ensures padding is included in the height */
+}
+
+.option label {
+    font-size: 14px !important;
+    color: #666 !important;
+    margin-bottom: 5px !important;
+}
+
+.option p,
+.option select {
+    font-size: 16px !important;
+    font-weight: bold !important;
+    color: #333 !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 0 !important;
+}
+
+.option select {
+    padding: 8px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+}
+
+.actions {
+    display: flex !important;
+    gap: 10px !important;
+    margin-top: 20px !important;
+    width: 100% !important;
+}
+
+.contact-owner {
+    flex: 1 !important;
+    padding: 10px !important;
+    font-size: 16px !important;
+    color: #4CAF50 !important;
+    background-color: #fff !important;
+    border: 1px solid #4CAF50 !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.contact-owner:hover {
+    background-color: #45a049 !important;
+    color: #fff !important;
+}
+
+.book-now {
+    flex: 1 !important;
+    padding: 10px !important;
+    font-size: 16px !important;
+    background-color: #2e7d32 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.book-now:hover {
+    background-color: #256726 !important;
+}

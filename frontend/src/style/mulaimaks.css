@@ -1,0 +1,61 @@
+.mulaimaksbg {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    height: calc(100vh - 60px) !important;
+    background-image: url("../aset/bg mulaimaks.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 0px !important;
+    padding-left: 20px !important;
+    padding-right: 500px !important;
+    color: white !important;
+}
+
+.mulaimaksbg .mulaimaks-content {
+    width: 100% !important;  
+    max-width: 800px !important;  
+    margin: 0 auto !important;  
+    padding: 20px !important;
+    border-radius: 10px !important;
+    text-align: left !important;
+    word-wrap: break-word !important;  
+    overflow-wrap: break-word !important;  
+}
+
+.mulaimaksbg .mulaimaks-content h1 {
+    font-size: 40px !important;
+    font-weight: bold !important;
+    color: #fff !important;
+    margin: 0 !important;
+    text-align: left !important;
+    word-wrap: break-word ;  
+}
+
+.mulaimaksbg .mulaimaks-content p {
+    color: #ffffff !important;
+    margin-top: 50px !important;
+    text-align: left !important;
+    word-wrap: break-word !important;  
+    line-height: 1.6 !important;  
+    white-space: normal !important;  
+    overflow-wrap: break-word !important;  
+    max-width: 800px !important; 
+    font-size: 15px !important;
+}
+
+.mulai-button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Sesuaikan warna */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Tambahkan jarak dari teks */
+}
+
+.mulai-button:hover {
+    background-color: #45a049; /* Efek hover */
+}

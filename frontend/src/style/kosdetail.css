@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.box {
+    width: 100vw; /* Full viewport width */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.image-group {
+    display: flex;
+    width: 100vw; /* Full viewport width */
+    height: 601px;
+    overflow: hidden; /* Ensures images fit without overflow */
+}
+
+.group {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.img-left {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    margin-right: 8px; /* Space between left and right images */
+    border-radius: 15px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    height: 100%;
+    gap: 8px; /* Space between top and bottom images */
+}
+
+.img-top-right, .img-bottom-right {
+    width: 100%;
+    height: 284px;
+    border-radius: 15px;
+}
+
+.details {
+    width: 100%;
+    /* max-width: 1200px; Limits the text area to a readable width */
+    padding: 20px;
+    font-size: 18px;
+    color: #201f1f;
+    text-align: left;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.info-button {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.info-button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.info-text {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #555;
+}
+
+.icon-lok {
+    margin-right: 5px;
+    color: rgb(6, 149, 47);
+}
+
+.icon-rat {
+    margin-right: 5px;
+    color: #f0f000;
+}

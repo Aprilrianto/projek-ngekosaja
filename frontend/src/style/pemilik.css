@@ -1,0 +1,45 @@
+.bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    text-align: center;
+    background-image: url("../aset/bg\ pemilik.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+  }
+  
+  .tekss {
+    max-width: 800px;
+    margin: 0 auto;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);  */
+  }
+  
+  .tekss h1 {
+      font-size: 40px; 
+      font-weight: bold;
+      color: #fff !important; 
+    }
+    
+  
+  h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .tekss p {
+    color: #fff !important;
+    margin-top: 9px !important;
+    font-size: 15px !important;
+  }
+  
+  p {
+    color: #ffffff !important;
+    margin-top: 10px !important;
+  }

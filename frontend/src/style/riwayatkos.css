@@ -1,0 +1,92 @@
+/* General Container Styling */
+body {
+    background-color: #f4f4f4 !important;
+    font-family: Arial, sans-serif !important;
+  }
+  
+  h4 {
+    color: #333 !important;
+    font-weight: bold !important;
+  }
+  
+  /* Table Styling */
+  .table {
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .table thead {
+    background-color: #e9ecef !important;
+    color: #333 !important;
+    font-weight: bold !important;
+  }
+  
+  .table th,
+  .table td {
+    vertical-align: middle !important;
+    text-align: center !important;
+    padding: 12px !important;
+    border-color: #dee2e6 !important;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f8f9fa !important;
+    cursor: pointer !important;
+  }
+  
+  /* Icon Styling */
+  .table td svg {
+    font-size: 18px !important;
+    margin-right: 5px !important;
+  }
+  
+  /* Status Styling */
+  .table td .status-success {
+    color: #28a745 !important;
+    font-weight: bold !important;
+  }
+  
+  .table td .status-failed {
+    color: #dc3545 !important;
+    font-weight: bold !important;
+  }
+  
+  /* Button and Dropdown */
+  .btn-light {
+    background-color: #fff !important;
+    border: 1px solid #ced4da !important;
+    color: #495057 !important;
+    transition: all 0.2s ease !important;
+  }
+  
+  .btn-light:hover {
+    background-color: #e2e6ea !important;
+    color: #333 !important;
+  }
+  
+  .dropdown-menu {
+    border-radius: 8px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* Avatar and Profile Section */
+  .profile-container {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+  
+  .profile-avatar {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    border: 2px solid #ced4da !important;
+  }
+  
+  .profile-info {
+    color: #495057 !important;
+    font-size: 14px !important;
+  }
+  

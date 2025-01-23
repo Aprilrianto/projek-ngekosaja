@@ -1,0 +1,192 @@
+.ulasan-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px 30px !important;
+    gap: 40px !important;
+    position: relative !important;
+}
+
+/* Left side - Specifications */
+.specs-section {
+    width: 40% !important;
+    max-width: 400px !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0 !important; 
+    text-align: left !important; 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.specs-content {
+    padding: 0 !important; 
+    margin: 0 !important;
+    text-align: left !important;
+}
+
+.spec-item {
+    display: flex !important;
+    align-items: center !important;
+    text-align: left !important;
+    color: black !important;
+    font-size: 18px !important;
+    margin: 8px 0 !important;
+    padding: 0 !important; 
+}
+
+.icon1 {
+    margin-right: 10px !important;
+}
+
+/* Right side - Reviews */
+.reviews-section {
+    width: 28% !important;
+    max-width: 600px !important;
+    position: relative !important;
+    right: 0 !important;
+
+    /* Tambahan untuk kotak transparan */
+    background-color: rgba(255, 255, 255, 0.8); /* Warna putih dengan transparansi */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Garis tepi dengan transparansi */
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 20px; /* Jarak dalam kotak */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.sectionn-title h3 {
+    font-size: 28px !important;
+    font-weight: 200 !important; 
+    margin-bottom: 20px !important;
+    color: #000000 !important;
+}
+
+.reviews-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 24px !important;
+}
+
+.reviews-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+}
+
+.review-item {
+    padding: 16px 0 !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+.review-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 8px !important;
+}
+
+.reviewer-name {
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    color: #111827 !important;
+}
+
+.review-date {
+    color: #6b7280 !important;
+    font-size: 14px !important;
+}
+
+.stars-container {
+    display: flex !important;
+    gap: 4px !important;
+    margin-bottom: 8px !important;
+}
+
+.star-icon {
+    color: #fbbf24 !important;
+}
+
+.review-title {
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    margin-bottom: 8px !important;
+    color: #111827 !important;
+}
+
+.review-comment {
+    color: #374151 !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 16px !important;
+}
+
+.owner-response {
+    background-color: #f9fafb !important;
+    padding: 16px !important;
+    border-radius: 8px !important;
+    margin-top: 16px !important;
+}
+
+.owner-response h5 {
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    margin-bottom: 8px !important;
+    color: #111827 !important;
+}
+
+.owner-response p {
+    color: #374151 !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+}
+
+.ulasan-button {
+    color: #ffffff !important;
+    font-size: 14px !important;
+    padding: 8px 16px !important;
+    border-radius: 4px !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+.ulasan-button:hover {
+    background-color: #f3f4f6 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .ulasan-container {
+        padding: 20px !important;
+    }
+    
+    .specs-section,
+    .reviews-section {
+        width: 45% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .ulasan-container {
+        flex-direction: column !important;
+    }
+    
+    .specs-section,
+    .reviews-section {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .reviews-section {
+        margin-top: 40px !important;
+    }
+}
+.spec-image {
+    width: 100% !important; /* Adjust the size as needed */
+    max-width: 500px !important; /* Set a maximum size */
+    margin-top: 20px !important;
+    border-radius: 8px !important; /* Optional: Add border-radius for rounded corners */
+  }
+  

@@ -1,0 +1,63 @@
+.memilih-text-center {
+    margin-top: 50px !important; 
+    padding-bottom: 20px !important;
+    color: #333 !important; 
+}
+
+h1 {
+    font-size: 36px !important;
+    font-weight: bold !important;
+    color: #2d3e50 !important; 
+}
+
+.memilih-container .card .card-title {
+    color: #1e3d58 !important; 
+}
+
+.memilih-container .card .card-subtitle {
+    color: #8b8b8b !important; 
+}
+
+.memilih-container .card .card-text {
+    color: #555555 !important; 
+}
+
+.memilih-container {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+    margin-top: 55px !important; 
+}
+
+.memilih-container .row {
+    display: flex !important;
+    justify-content: center !important; 
+    gap: 30px !important; 
+    flex-wrap: wrap !important; 
+    padding: 0 20px !important; 
+}
+
+
+.memilih-container .card {
+    width: 30rem !important; 
+    border-radius: 10px !important; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; 
+    transition: transform 0.3s ease !important; 
+}
+
+.memilih-container .card:hover {
+    transform: translateY(-10px) !important; 
+}
+
+@media (max-width: 768px) {
+    .memilih-container .row {
+        flex-direction: column !important; 
+        align-items: center !important; 
+        padding: 0 !important; 
+    }
+
+    
+    .memilih-container .card {
+        width: 100% !important; 
+    }
+}

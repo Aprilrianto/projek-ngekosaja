@@ -1,0 +1,90 @@
+/* Container utama untuk footer */
+.footer-container {
+    display: flex !important;
+    justify-content: space-between !important; /* Menyusun kolom-kolom footer secara horizontal */
+    padding: 20px !important;
+    background-color: #f8f9fa !important;
+}
+
+.footer-left {
+    flex: 1 !important;
+    padding-right: 60px !important;
+}
+
+.footer-logo {
+    width: 40px !important;
+    height: 40px !important;
+    margin-right: 10px !important;
+}
+
+.footer-brand-name {
+    font-size: 20px !important;
+    font-weight: bold !important;
+    color: #59BC8F !important;
+}
+
+.footer-description {
+    font-size: 16px !important;
+    color: #000000 !important;
+    margin-top: 10px !important;
+}
+
+/* Menyusun elemen footer secara vertikal */
+.footer-nav, .footer-contact, .footer-follow-us {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important; /* Menyusun elemen secara vertikal */
+    align-items: flex-start !important;
+}
+
+.footer-nav-title, .footer-contact-title, .footer-follow-title {
+    font-size: 20px !important;
+    font-weight: bold !important;
+    margin-bottom: 10px !important;
+    color: #59BC8F !important;
+}
+
+.footer-nav-link, .footer-contact-link {
+    font-size: 16px !important;
+    color: #000000 !important;
+    text-decoration: none !important;
+    margin-bottom: 8px !important;
+}
+
+.footer-nav-link:hover, .footer-contact-link:hover {
+    text-decoration: underline !important;
+}
+
+
+.footer-social-icons {
+    display: flex !important;
+    flex-direction: column !important; 
+}
+
+.footer-social-icon {
+    display: block !important;
+    margin-bottom: 10px !important; 
+}
+
+.social-icon {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important; 
+    object-fit: cover !important;
+}
+
+/* Responsif untuk tampilan kecil */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column !important; /* Menyusun footer secara vertikal pada tampilan kecil */
+        align-items: flex-start !important;
+    }
+
+    .footer-left {
+        margin-bottom: 20px !important;
+    }
+
+    .footer-nav, .footer-contact, .footer-follow-us {
+        margin-bottom: 20px !important;
+    }
+}

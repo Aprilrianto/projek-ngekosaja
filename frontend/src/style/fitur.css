@@ -1,0 +1,67 @@
+.text-center {
+    margin-top: 50px !important; 
+    padding-bottom: 20px !important;
+    color: #333 !important; 
+}
+
+
+h1 {
+    font-size: 36px !important;
+    font-weight: bold !important;
+    color: #2d3e50 !important; 
+}
+
+
+.fitur-container .card .card-title {
+    color: #1e3d58 !important; 
+}
+
+.fitur-container .card .card-subtitle {
+    color: #8b8b8b !important; 
+}
+
+.fitur-container .card .card-text {
+    color: #555555 !important; 
+}
+
+
+.fitur-container {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+    margin-top: 55px !important; 
+}
+
+
+.fitur-container .row {
+    display: flex !important;
+    justify-content: center !important; 
+    gap: 30px !important; 
+    flex-wrap: wrap !important; 
+    padding: 0 20px !important; 
+}
+
+
+.fitur-container .card {
+    width: 20rem !important; 
+    border-radius: 10px !important; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; 
+    transition: transform 0.3s ease !important; 
+}
+
+.fitur-container .card:hover {
+    transform: translateY(-10px) !important; 
+}
+
+
+@media (max-width: 768px) {
+    .fitur-container .row {
+        flex-direction: column !important; 
+        align-items: center !important; 
+        padding: 0 !important; 
+    }
+
+    .fitur-container .card {
+        width: 100% !important; 
+    }
+}
