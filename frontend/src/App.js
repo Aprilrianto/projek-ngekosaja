@@ -11,6 +11,7 @@ import Paymentkos from './pages/paymentkos';
 import Riwayatkos from './pages/riwayatkos';
 
 
+
 // dashboard pemilik kost
 import Dashboard_overview from './pages-dashpemilik/dashboard_overview';
 import Kamar from './pages-dashpemilik/dashboard_kamar';
@@ -29,6 +30,7 @@ const App = () => {
                     <Route path="/detailkos/:id" element={<Detailkos />} />
                     <Route path="/paymentkos" element={<Paymentkos />} />
                     <Route path="/riwayatkos" element={<Riwayatkos />} />
+                    
 
                      {/* dashboard pemilik kost */}
                     <Route path="/dashboard_overview" element={<Dashboard_overview />} />
