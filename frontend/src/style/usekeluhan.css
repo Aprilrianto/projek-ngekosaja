@@ -1,0 +1,61 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #f4f4f4 !important;
+  }
+  
+  .user-keluhan {
+    max-width: 600px !important;
+    margin: 20px auto !important;
+    padding: 20px !important;
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  h1 {
+    text-align: center !important;
+    color: #333 !important;
+  }
+  
+  form div {
+    margin-bottom: 15px !important;
+  }
+  
+  label {
+    display: block !important;
+    margin-bottom: 5px !important;
+    font-weight: bold !important;
+    color: #555 !important;
+  }
+  
+  input, textarea {
+    width: 100% !important;
+    padding: 8px !important;
+    box-sizing: border-box !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    font-size: 14px !important;
+  }
+  
+  textarea {
+    resize: vertical !important;
+    min-height: 100px !important;
+  }
+  
+  button {
+    padding: 10px 15px !important;
+    background-color: #28a745 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+  }
+  
+  button:hover {
+    background-color: #218838 !important;
+  }

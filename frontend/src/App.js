@@ -18,6 +18,11 @@ import Dashboard_overview from './pages-dashpemilik/dashboard_overview';
 import Kamar from './pages-dashpemilik/dashboard_kamar';
 import Dashboard_pembayaran from './pages-dashpemilik/dashboard_pembayaran';
 import BuatPesanan from './pages/BuatPesanan';
+
+
+//dahboard admin
+import Dashboard_ulasan from './pages-dashboard_admin/dashboard_ulasan';
+
 const App = () => {
     return (
         <Router> 
@@ -38,6 +43,9 @@ const App = () => {
                     <Route path="/dashboard_overview" element={<Dashboard_overview />} />
                     <Route path="/dashboard_kamar" element={<Kamar/>} />
                     <Route path="/dashboard_pembayaran" element={<Dashboard_pembayaran/>} />
+
+
+                    <Route path="/dashboard_ulasan" element={<Dashboard_ulasan/>} />
                 </Routes>
             </div>
         </Router>

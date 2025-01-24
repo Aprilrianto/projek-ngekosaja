@@ -1,0 +1,69 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #f4f4f4 !important;
+  }
+  
+  .admin-dashboard {
+    max-width: 1000px !important;
+    margin: 20px auto !important;
+    padding: 20px !important;
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  h1 {
+    text-align: center !important;
+    color: #333 !important;
+  }
+  
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 20px !important;
+  }
+  
+  th, td {
+    padding: 10px !important;
+    text-align: left !important;
+    border-bottom: 1px solid #ddd !important;
+  }
+  
+  th {
+    background-color: #f8f9fa !important;
+  }
+  
+  .status-button {
+    padding: 5px 10px !important;
+    border: none !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    font-weight: bold !important;
+  }
+  
+  .status-button.read {
+    background-color: #28a745 !important;
+    color: #fff !important;
+  }
+  
+  .status-button.unread {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+  }
+  
+  .delete-button {
+    padding: 5px 10px !important;
+    background-color: #ffc107 !important;
+    color: #000 !important;
+    border: none !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    font-weight: bold !important;
+  }
+  
+  .delete-button:hover {
+    background-color: #e0a800 !important;
+  }
